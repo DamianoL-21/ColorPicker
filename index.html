@@ -1,45 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css"  rel="stylesheet"/>
-    <title>Document</title>
-</head>
-<body  id="cambioColoreBody">
-    <h1>PICK A COLOR</h1>
-    <h3>Scegli un colore per cambiare lo sfondo della pagina</h3>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css"  rel="stylesheet"/>
+        <title>Document</title>
+    </head>
+    <body  id="cambioColoreBody">
+        <h1>PICK A COLOR</h1>
+        <h3>Scegli un colore per cambiare lo sfondo della pagina</h3>
 
-    <div class="colore" id="color1">
-        <a class="colorePulsante" href="#">
-        colore del Bottone
-        </a>
-    </div>
-    <div class="colore" id="color2">
-        <a class="colorePulsante" href="#">
-        colore del Bottone
-        </a>
-    </div>
-    <div class="colore" id="color3">
-        <a class="colorePulsante" href="#">
-        colore del Bottone
-        </a>
-    </div>
-    <div class="colore" id="color4">
-        <a class="colorePulsante" href="#">
-        colore del Bottone
-        </a>
-    </div>
-    <div class="colore" id="color5">
-        <a class="colorePulsante" href="#">
-        colore del Bottone
-        </a>
-    </div>
-    <div class="colore" id="color6">
-        <a class="colorePulsante" href="#">
-        colore del Bottone
-        </a>
-    </div>
-</body>
+        <div id="contenitore">
+            <div class="colore" id="color1">
+                <a class="colorePulsante" href="#">
+                    #C4F1BE
+                </a>
+            </div>
+            <div class="colore" id="color2">
+                <a class="colorePulsante" href="#">
+                    #66C3FF
+                </a>
+            </div>
+            <div class="colore" id="color3">
+                <a class="colorePulsante" href="#">
+                    #FFB997
+                </a>
+            </div>
+            <div class="colore" id="color4">
+                <a class="colorePulsante" href="#">
+                    #DB6C79
+                </a>
+            </div>
+            <div class="colore" id="color5">
+                <a class="colorePulsante" href="#">
+                    #F28123
+                </a>
+            </div>
+            <div class="colore" id="color6">
+                <a class="colorePulsante" href="#">
+                    #e7bb41
+                </a>
+            </div>
+        </div>
+        <script type="text/javascript">
+            let button= document.querySelector(".colorePulsante")
+
+            button.addEventListener("click", function(e) {
+                e.preventDefault()
+                console.log("Pulsante cliccato!")
+
+                let cambioColore = document.querySelector("cambioColoreBody")
+                console.log(button.innerText)
+                cambioColore.style.backgroundColor = button.innerText
+            })
+        </script>
+    </body>
 </html>
