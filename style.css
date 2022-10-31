@@ -1,8 +1,10 @@
 body {
     margin: 0;
+    text-align: center;
 }
 
 h1 {
+    padding-top: 10%;
     font-size: 60px;
     font-weight: 600;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -12,4 +14,34 @@ h1 {
 h3 {
     font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
+}
+
+.colore {
+    height: 10px;
+    width: 10px;
+
+}
+
+#color1 {
+    background-color: #C4F1BE;
+}
+
+#color2 {
+    background-color: #66C3FF;
+}
+
+#color3 {
+    background-color: #FFB997;
+}
+
+#color4 {
+    background-color: #DB6C79;
+}
+
+#color5 {
+    background-color: #F28123;
+}
+
+#color6 {
+    background-color: #e7bb41;
 }
